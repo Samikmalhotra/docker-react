@@ -6,7 +6,7 @@ before_install:
   - docker build -t samikmalhotra/docker-react -f Dockerfile .
 
 script: 
-  - docker run samikmalhotra/docker-react npm run test 
+  - docker run samikmalhotra/docker-react
 
 deploy: 
   edge: true
