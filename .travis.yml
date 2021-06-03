@@ -4,9 +4,12 @@ services:
 
 before_install:
   - docker build -t samikmalhotra/docker-react .
+
+script: 
   - docker run samikmalhotra/docker-react
 
 deploy: 
+  edge: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "docker-react"
