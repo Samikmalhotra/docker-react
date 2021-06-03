@@ -3,9 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t samikmalhotra/docker-react -f Dockerfile .
-
-script: 
+  - docker build -t samikmalhotra/docker-react .
   - docker run samikmalhotra/docker-react
 
 deploy: 
